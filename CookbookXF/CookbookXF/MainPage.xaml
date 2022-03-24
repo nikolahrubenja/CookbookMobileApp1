@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:viewmodels="clr-namespace:CookbookXF.ViewModels"
+             x:Class="CookbookXF.MainPage"
+             BackgroundImage="Back.jpg">
+
+    <StackLayout>
+
+        <Grid Padding="10" ColumnSpacing="0" RowSpacing="0" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="15"/>
+                <ColumnDefinition Width="170"/>
+                <ColumnDefinition Width="185"/>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition Width="20"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="30"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="100"/>
+                <RowDefinition Height="150"/>
+                <RowDefinition Height="100"/>
+            </Grid.RowDefinitions>
+
+            <Label Grid.Row="1"
+                   Grid.Column="1"
+                   Grid.ColumnSpan="2"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   Text="Seacret Recipes" 
+                   TextColor="Black" 
+                   FontSize="24" 
+                   FontAttributes="Bold" 
+                   Margin="15"/>
+
+            
+            <Button WidthRequest="10"
+                    Grid.ColumnSpan="3"
+                    Grid.Row="0"
+                    HorizontalOptions="End"
+                    HeightRequest="10"
+                    ImageSource="https://thumbs.dreamstime.com/b/settings-icon-vector-isolated-white-background-your-web-mobile-app-design-settings-logo-concept-settings-icon-vector-134169845.jpg"/>
+
+
+
+            <Button Grid.Row="3" Grid.Column="1" ImageSource="https://www.vmelektronik.com/wp-content/uploads/2017/02/Arkopal-tanjir-Parma-dezertni-BORMIOLI.jpg"/>
+            <Button Grid.Row="3" Grid.Column="2" ImageSource="https://www.vmelektronik.com/wp-content/uploads/2017/02/Arkopal-tanjir-Parma-dezertni-BORMIOLI.jpg" />
+            <Button Grid.Row="5" Grid.Column="1" ImageSource="https://www.vmelektronik.com/wp-content/uploads/2017/02/Arkopal-tanjir-Parma-dezertni-BORMIOLI.jpg" />
+            <Button Grid.Row="5" Grid.Column="2" ImageSource="https://www.vmelektronik.com/wp-content/uploads/2017/02/Arkopal-tanjir-Parma-dezertni-BORMIOLI.jpg" />
+
+            <Label Grid.Row="4"
+                   Grid.Column="1"
+                   Text="Breakfast"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20"/>
+            <Label Grid.Row="4"
+                   Grid.Column="2"
+                   Text="Lunch"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20"/>
+            <Label Grid.Row="6"
+                   Grid.Column="1"
+                   Text="Snacks"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20"/>
+            <Label Grid.Row="6"
+                   Grid.Column="2"
+                   Text="Dinner"
+                   VerticalTextAlignment="Center"
+                   HorizontalTextAlignment="Center"
+                   FontSize="20"/>
+            
+        </Grid>
+        
+    </StackLayout>
+</ContentPage>
